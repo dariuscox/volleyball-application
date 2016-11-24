@@ -27,29 +27,36 @@ public class Player {
         return position;
     }
 
-    public void setPosition(String position) {
-        this.position = position;
-    }
-
     public String getstats(){
         return stats.toString();
     }
 
+    public boolean isOnCourt(){return onCourt;}
+
+    public void putOnCourt(){onCourt = true;}
+
+    public void takeOffCourt(){onCourt = false;}
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
     public void addStat(String stat){
-        if (stat == "k"){
-            stats.killAdd();
+        if (isOnCourt()) {
+            if (stat == "k") {
+                stats.killAdd();
+            } else if (stat == "s") {
+                stats.assistAdd();
+            } else if (stat == "d") {
+                stats.digAdd();
+            } else if (stat == "a") {
+                stats.aceAdd();
+            } else if (stat == "b") {
+                stats.blockAdd();
+            }
         }
-        else if (stat == "s"){
-            stats.assistAdd();
-        }
-        else if (stat == "d"){
-            stats.digAdd();
-        }
-        else if (stat == "a"){
-            stats.aceAdd();
-        }
-        else if (stat == "b"){
-            stats.blockAdd();
+        else{
+            System.out.println("Player not on court");
         }
 
     }

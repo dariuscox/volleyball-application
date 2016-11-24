@@ -28,6 +28,29 @@ public class Player {
         this.position = position;
     }
 
+    public String getstats(){
+        return stats.toString();
+    }
+
+    public void addStat(String stat){
+        if (stat == "k"){
+            stats.killAdd();
+        }
+        else if (stat == "s"){
+            stats.assistAdd();
+        }
+        else if (stat == "d"){
+            stats.digAdd();
+        }
+        else if (stat == "a"){
+            stats.aceAdd();
+        }
+        else if (stat == "b"){
+            stats.blockAdd();
+        }
+
+    }
+
     public String toString() {
         return "Player{" + "name='" + name + '\'' + ", number=" + number + '}';
     }

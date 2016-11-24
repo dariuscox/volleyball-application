@@ -18,9 +18,11 @@ public class Match {
         }
         if (t1.getPoints() == 25) {
             System.out.println(t1.getTeamName() + " wins");
+            t1.setAdd();
         }
         else if (t2.getPoints() == 25){
             System.out.println(t2.getTeamName() + " wins");
+            t2.setAdd();
         }
     }
 }

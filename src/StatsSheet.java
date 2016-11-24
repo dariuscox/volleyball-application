@@ -9,6 +9,35 @@ public class StatsSheet {
     private Integer Aces;
     private Integer Blocks;
 
+
+    public StatsSheet(){
+        this.Digs = 0;
+        this.Assits = 0;
+        this.Kills = 0;
+        this.Aces = 0;
+        this.Blocks = 0;
+    }
+
+    public Integer getDigs(){
+        return this.Digs;
+    }
+
+    public Integer getAssits(){
+        return this.Assits;
+    }
+
+    public Integer getKills(){
+        return this.Kills;
+    }
+
+    public Integer getAces(){
+        return this.Aces;
+    }
+
+    public Integer getBlock(){
+        return this.Blocks;
+    }
+
     @Override
     public String toString(){
         String Sheet;

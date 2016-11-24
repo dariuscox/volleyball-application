@@ -6,10 +6,13 @@ public class Player {
     private Integer number;
     private String position;
     private StatsSheet stats;
+    private Boolean onCourt;
+
     Player(String name, int num){
         this.name = name;
         this.number = num;
         this.stats = new StatsSheet();
+        onCourt = false;
     }
 
     public String getName() {

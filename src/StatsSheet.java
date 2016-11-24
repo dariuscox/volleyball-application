@@ -10,7 +10,7 @@ public class StatsSheet {
     private Integer Blocks;
 
 
-    public StatsSheet(){
+    StatsSheet(){
         this.Digs = 0;
         this.Assits = 0;
         this.Kills = 0;

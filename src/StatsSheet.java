@@ -37,7 +37,18 @@ public class StatsSheet {
     public Integer getBlock(){
         return this.Blocks;
     }
-
+    public void digAdd(){
+        Digs++;
+    }
+    public void assistAdd(){
+        Assits++;
+    }public void killAdd(){
+        Kills++;
+    }public void blockAdd(){
+        Blocks++;
+    }public void aceAdd(){
+        Aces++;
+    }
     @Override
     public String toString(){
         String Sheet;

@@ -43,15 +43,15 @@ public class Player {
 
     public void addStat(String stat){
         if (isOnCourt()) {
-            if (stat == "k") {
+            if (stat.equals("k")) {
                 stats.killAdd();
-            } else if (stat == "s") {
+            } else if (stat.equals("s")) {
                 stats.assistAdd();
-            } else if (stat == "d") {
+            } else if (stat.equals("d")) {
                 stats.digAdd();
-            } else if (stat == "a") {
+            } else if (stat.equals("a")) {
                 stats.aceAdd();
-            } else if (stat == "b") {
+            } else if (stat.equals("b")) {
                 stats.blockAdd();
             }
         }

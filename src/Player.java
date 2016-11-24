@@ -2,5 +2,8 @@
  * THE Player, man.
  */
 public class Player {
-    private String name;
+
+    private String Name;
+
+    private Integer Number;
 }

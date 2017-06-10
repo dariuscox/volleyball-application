@@ -6,6 +6,6 @@ yxd3549
 
 To do for release 1:
 Implement scoring system
-Implement TextMain
+Implement TextMain(Temporarily Scoring Main)
 Build upon already implemented classes
 Document code and generate javadocs

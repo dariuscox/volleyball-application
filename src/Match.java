@@ -15,9 +15,9 @@ public class Match {
         this.currentSet = 1;
     }
     public void awardPoint(String px) {
-        if (px.equals("1")) {
+        if (px.equals("p1")) {
             t1.pointAdd();
-        } else if (px.equals("2")) {
+        } else if (px.equals("p2")) {
             t2.pointAdd();
         }
         score();

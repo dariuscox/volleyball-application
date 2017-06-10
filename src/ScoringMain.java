@@ -10,7 +10,7 @@ public class ScoringMain {
         Stack<String> undo = new Stack<>();
         Team t1 =  new Team("Home");
         Team t2 = new Team("Away");
-        Match M = new Match(t1,t2,1);
+        Match M = new Match(t1,t2,2);
         Integer gameTo;
         Scanner scan  = new Scanner(System.in);
         M.start();
@@ -27,7 +27,6 @@ public class ScoringMain {
             else{
                 M.awardPoint(in);
                 undo.push(in);
-                M.score();
             }
         }
         System.out.println("we made something work");

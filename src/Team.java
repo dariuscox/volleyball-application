@@ -84,11 +84,17 @@ public class Team {
     }
 
     public static void main(String[] args){
-        Team team = new Team("RIT");
+        Team team1 = new Team("RIT Scrub Squad");
         Player player1 = new Player("Daniel Cox", 8);
         Player player2 = new Player("Yancarlos Diaz", 1);
-        team.addPlayer(player1);
-        team.addPlayer(player2);
-        System.out.print(team);
+        team1.addPlayer(player1);
+        team1.addPlayer(player2);
+        System.out.print(team1);
+        Team team2 = new Team("RIT A Team");
+        Player player3 = new Player("Chris Pooploski", 5);
+        Player player4 = new Player("Eric Deal", 4);
+        team2.addPlayer(player3);
+        team2.addPlayer(player4);
+        System.out.print(team2);
     }
 }

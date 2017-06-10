@@ -2,7 +2,6 @@
  * THE Team
  */
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Team {
@@ -38,6 +37,7 @@ public class Team {
     public void pointAdd(){
         points ++;
     }
+    public void pointRemove(){points --;}
     public void setAdd(){
         sets++;
     }
@@ -66,5 +66,9 @@ public class Team {
 
     public Integer getSets() {
         return sets;
+    }
+
+    public void setPoints(Integer points) {
+        this.points = points;
     }
 }

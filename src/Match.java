@@ -25,4 +25,25 @@ public class Match {
             t2.setAdd();
         }
     }
+    public void removePoint(String px){
+        if (px.equals("p1")) {
+            t1.pointRemove();
+        } else if (px.equals("p2")) {
+            t2.pointRemove();
+        }
+    }
+    public void start(){
+        t1.setPoints(0);
+        t2.setPoints(0);
+        System.out.println("Starting Match.");
+    }
+    public void score(){
+        System.out.println(t1.getTeamName() + ": " + t1.getPoints() + " - " + t2.getTeamName() + ": " + t2.getPoints());
+    }
+    public void switchSides(){
+        System.out.println("Switching sides.");
+        t1.setPoints(0);
+        t2.setPoints(0);
+    }
+
 }

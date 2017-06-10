@@ -5,6 +5,7 @@ public class Match {
     private Integer sets;
     private Team t1;
     private Team t2;
+
     Match(Team t1,Team t2, Integer sets){
         this.t1 = t1;
         this.t2 = t2;

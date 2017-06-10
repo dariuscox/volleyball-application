@@ -51,12 +51,12 @@ public class StatsSheet {
     }
     @Override
     public String toString(){
-        String Sheet;
-        Sheet = "Digs: " + this.Digs.toString() + "\n";
-        Sheet = "Assists: " + this.Assits.toString() + "\n";
-        Sheet = "Kills: " + this.Kills.toString() + "\n";
-        Sheet = "Aces: " + this.Aces.toString() + "\n";
-        Sheet = "Blocks: " + this.Blocks.toString() + "\n";
+        String Sheet = "";
+        Sheet += "Digs: " + this.Digs.toString() + "\n";
+        Sheet += "Assists: " + this.Assits.toString() + "\n";
+        Sheet += "Kills: " + this.Kills.toString() + "\n";
+        Sheet += "Aces: " + this.Aces.toString() + "\n";
+        Sheet += "Blocks: " + this.Blocks.toString() + "\n";
         return Sheet;
     }
 }

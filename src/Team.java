@@ -2,6 +2,8 @@
  * THE Team
  */
 
+import javax.xml.soap.SOAPPart;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Team {
@@ -70,5 +72,23 @@ public class Team {
 
     public void setPoints(Integer points) {
         this.points = points;
+    }
+
+    public String toString(){
+        String string = "";
+        string += teamName + "\n";
+        for(Player player: Roster.values()){
+            string += player + "\n";
+        }
+        return string;
+    }
+
+    public static void main(String[] args){
+        Team team = new Team("RIT");
+        Player player1 = new Player("Daniel Cox", 8);
+        Player player2 = new Player("Yancarlos Diaz", 1);
+        team.addPlayer(player1);
+        team.addPlayer(player2);
+        System.out.print(team);
     }
 }

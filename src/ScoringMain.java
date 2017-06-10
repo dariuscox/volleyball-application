@@ -31,7 +31,6 @@ public class ScoringMain {
             }
         }
         System.out.println("we made something work");
-
     }
 
 }

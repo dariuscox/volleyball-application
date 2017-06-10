@@ -27,7 +27,7 @@ public class Player {
         return position;
     }
 
-    public String getstats(){
+    public String getStats(){
         return stats.toString();
     }
 
@@ -41,7 +41,7 @@ public class Player {
         this.position = position;
     }
 
-    public void addStat(String stat){
+    public void addStat(String stat) {
         if (isOnCourt()) {
             if (stat.equals("k")) {
                 stats.killAdd();
@@ -54,11 +54,9 @@ public class Player {
             } else if (stat.equals("b")) {
                 stats.blockAdd();
             }
-        }
-        else{
+        } else {
             System.out.println("Player not on court");
         }
-
     }
 
     public String toString() {
